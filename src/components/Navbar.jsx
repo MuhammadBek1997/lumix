@@ -1,29 +1,34 @@
-import React from 'react';
-import './Navbar.css';
+import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({test,showSidebar, setShowSidebar}) => {
   return (
-    <nav className="navbar">
-      <div className="navbar__container">
-        <div className="navbar__left">
-          <span className="navbar__brand"><b>LUNIX</b> companies</span>
-          <span className="navbar__location">Uzbekistan</span>
+    <div className='navbar'>
+        <div className='nav-logo'>
+          <img src="" alt="Lunix" />
         </div>
-        <ul className="navbar__menu">
-          <li>Главный</li>
-          <li>О нас</li>
-          <li>Команда</li>
-          <li>Услуги</li>
-          <li>Цены</li>
-          <li>Связаться с нами</li>
-        </ul>
-        <div className="navbar__lang">
-          <span>O'zbekcha</span>
-          <span>Русский</span>
+        <div className='nav-list'>
+          <a href="#Home" onClick={()=>setShowSidebar(false)}>Home</a>
+          <a href="#Group" onClick={()=>test("25vh")}>Group</a>
+          <a href="#Prices" onClick={()=>test("60vh")}>Prices</a>
+          <a href="#AboutUs" onClick={()=>test("7vh")}>About Us</a>
+          <a href="#Services" onClick={()=>test("42.5vh")}>Services</a>
+          <a href="#ContactUs" onClick={()=>test("77.7vh")}>Contact Us</a>
         </div>
-      </div>
-    </nav>
-  );
-};
+        <div className='nav-lang'>
+          <select name="" id="">
+            <option value="">
+              O'zbekcha
+            </option>
+            <option value="">
+              Узбекча
+            </option>
+            <option value="">
+              Русский
+            </option>
+          </select>
+        </div>
+    </div>
+  )
+}
 
-export default Navbar;
+export default Navbar

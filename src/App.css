@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.sidebar{
+    width: 8vw;
+    height: 90vh;
+    border: 1px solid;
+    position: fixed;
+    top: 10vh;
+    left: 2vw;
+    display: flex;
+}
+.scrollArrowBox{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    transition: 1000ms;
+}
+.scrollLineBox{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.scrollingBox{
+    width: 50px;
+    height: 5px;
+    background-color: yellow;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.scrollingRoad{
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.navbar{
+    width: 90vw;
+    height: 10vh;
+    position: fixed;
+    left: 5vw;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-logo{
+    width: 15%;
+}
+.nav-list{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+}
+.bodyElements{
+    width: 88vw;
+    margin-left: 10vw;
+}
+section{
+    width: 80vw;
+    height: 70vh;
+    padding-top: 10vh;
+    margin-bottom: 30vh;
+}
